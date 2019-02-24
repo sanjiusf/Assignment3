@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <!-- attach our stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+<script>
+	function showGit()
+	{
+		window.location.assign("https://github.com/lhirani25");
+	}
+</script>
+</head>
+<body>
+
+    <!-- the header -->
+    <header>
+        <a id="logo" href="index.html">
+            <span style="font-size:40px">Dashboard</span>
+        </a>
+
+    </header>
+
+    <!-- the content -->
+    <main>
+
+        <!-- hero content -->
+        <div class="hero">
+            <!-- content for the hero -->
+            <div class="hero-content">
+				 
+					<a href="Course1.html">
+					  <img img src="img/html.png" alt="HTML Course" style="width:300px;height:300px;">
+					  <div class="desc" onclick="myFunction()">ISM 6500: HTML 5 Course</div>
+					</a>
+
+					<a href="Course2.html">
+					  <img img  src="img/css.jpg" alt="CSS Course" style="width:300px;height:300px;">
+					  <div class="desc" onclick="myFunction()">ISM 6501: CSS Course</div>
+					</a>
+            </div>
+        </div>
+		
+		<script>
+				
+				function Toggle1() {
+					  var x = document.getElementById("container1");
+					  x.style.display = "none";
+					}
+				function Toggle2() {
+					  var x = document.getElementById("container2");
+					  x.style.display = "none";
+					}
+				function Toggle3() {
+					  var x = document.getElementById("container3");
+					  x.style.display = "none";
+					}
+		</script>
+
+        <!-- features section -->
+        <div class="site-section">
+        <div class="site-section-inside">
+            <div class="section-header">
+                <h2>To Do</h2>
+            </div>
+			
+            <div class="feature-box">
+					<div id="container1">
+						<button id = "x" onclick="Toggle1()">X</button>
+						<img src="img/ann.jpeg" alt="Easy to Use" width="80px">
+						<h5>Assignment1-HTML Due</h5>
+						<p>Feb 28</p>
+					</div>
+            </div>
+			
+			 <div class="feature-box">
+					<div id="container2">
+						<button id = "x" onclick="Toggle2()">X</button>
+						<img src="img/ann.jpeg" alt="Easy to Use" width="80px">
+						<h5>Assignment2-HTML Due</h5>
+						<p>Mar 3</p>
+					</div>
+            </div>
+			
+			 <div class="feature-box">
+					<div id="container3">
+						<button id = "x" onclick="Toggle3()">X</button>
+						<img src="img/ann.jpeg" alt="Easy to Use" width="80px">
+						<h5>Assignment1-CSS Due</h5>
+						<p>Feb 28</p>
+					</div>
+            </div>
+        </div>
+			<center><input type="button" value="Redirect to Github" onclick="showGit()" class="redirect"/></center>
+        </div>
+    </main>
+</body>
+</html>
